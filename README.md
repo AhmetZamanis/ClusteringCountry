@@ -1,4 +1,4 @@
-# ClusteringCountry
+# Clustering analysis - Country statistics
 Non-hierarchical k-medoids clustering on a dataset of country statistics.
 
 [Report](https://github.com/AhmetZamanis/ClusteringCountry/blob/main/ClusteringCountry2.md) of the full analysis
