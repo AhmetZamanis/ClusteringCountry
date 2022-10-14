@@ -496,7 +496,7 @@ df_clus2 <- subset(df_clus, cluster==2)
 df_clus3 <- subset(df_clus, cluster==3)
 ```
 
-```{r}
+```{r, out.width="75%", out.height="75%"}
 clus1 <- 
   gt(data=df_clus1[c(1,12,27,35,38),], rownames_to_stub = TRUE) %>% 
   tab_header(title="Cluster 1") %>% 
@@ -506,7 +506,9 @@ clus1 <-
               cell_text(weight="bold"))) %>% 
   opt_table_font(font=list(google_font("Calibri"), default_fonts()))
 
-clus1
+gtsave(data=clus1, filename="./ClusteringCountry2_files/figure-gfm/clus1.png")
+
+knitr::include_graphics("./ClusteringCountry2_files/figure-gfm/clus1.png", dpi=NA)
 ```
 \
 We can see cluster 1 consists of generally underdeveloped countries. This cluster has 41 observations.
@@ -522,7 +524,9 @@ clus2 <-
               cell_text(weight="bold"))) %>% 
   opt_table_font(font=list(google_font("Calibri"), default_fonts()))
 
-clus2
+gtsave(data=clus2, filename="./ClusteringCountry2_files/figure-gfm/clus2.png")
+
+knitr::include_graphics("./ClusteringCountry2_files/figure-gfm/clus2.png", dpi=NA)
 ```
 \
 Cluster 2 generally consists of developing countries across the world, but there are some observations that may have fit into the first cluster as well. We knew that cluster 2 had some overlap with the other 2 clusters. This is the largest cluster with 96 observations.
@@ -538,7 +542,9 @@ clus3 <-
               cell_text(weight="bold"))) %>% 
   opt_table_font(font=list(google_font("Calibri"), default_fonts()))
 
-clus3
+gtsave(data=clus3, filename="./ClusteringCountry2_files/figure-gfm/clus3.png")
+
+knitr::include_graphics("./ClusteringCountry2_files/figure-gfm/clus3.png", dpi=NA)
 ```
 \
 Cluster 3 seems to be the more developed countries in the world. This is the smallest cluster with 30 observations.
