@@ -514,7 +514,7 @@ knitr::include_graphics("./ClusteringCountry2_files/figure-gfm/clus1.png", dpi=N
 We can see cluster 1 consists of generally underdeveloped countries. This cluster has 41 observations.
 \
 \
-```{r}
+```{r, out.width="75%", out.height="75%"}
 clus2 <- 
   gt(data=df_clus2[c(4, 27, 38, 89, 92),], rownames_to_stub = TRUE) %>% 
   tab_header(title="Cluster 2") %>% 
@@ -532,7 +532,7 @@ knitr::include_graphics("./ClusteringCountry2_files/figure-gfm/clus2.png", dpi=N
 Cluster 2 generally consists of developing countries across the world, but there are some observations that may have fit into the first cluster as well. We knew that cluster 2 had some overlap with the other 2 clusters. This is the largest cluster with 96 observations.
 \
 \
-```{r}
+```{r, out.width="75%", out.height="75%"}
 clus3 <- 
   gt(data=df_clus3[c(1, 4, 12, 24, 28),], rownames_to_stub = TRUE) %>% 
   tab_header(title="Cluster 3") %>% 

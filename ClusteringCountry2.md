@@ -862,13 +862,13 @@ countries in each cluster:
 We can see cluster 1 consists of generally underdeveloped countries.
 This cluster has 41 observations.  
   
-![](./ClusteringCountry2_files/figure-gfm/clus2.png)<!-- -->  
+<img src="./ClusteringCountry2_files/figure-gfm/clus2.png" width="75%" height="75%" />  
 Cluster 2 generally consists of developing countries across the world,
 but there are some observations that may have fit into the first cluster
 as well. We knew that cluster 2 had some overlap with the other 2
 clusters. This is the largest cluster with 96 observations.  
   
-![](./ClusteringCountry2_files/figure-gfm/clus3.png)<!-- -->  
+<img src="./ClusteringCountry2_files/figure-gfm/clus3.png" width="75%" height="75%" />  
 Cluster 3 seems to be the more developed countries in the world. This is
 the smallest cluster with 30 observations.  
 
